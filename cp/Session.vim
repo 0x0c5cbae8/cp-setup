@@ -13,13 +13,14 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +68 main.cpp
+badd +1 main.cpp
 badd +1 input.txt
 badd +1 output.txt
 badd +1 templates/init.cpp
+badd +0 ~/programming/cp
 argglobal
 %argdel
-$argadd ~/programming/cp/
+$argadd ~/programming/cp
 edit main.cpp
 let s:save_splitbelow = &splitbelow
 let s:save_splitright = &splitright
@@ -41,11 +42,11 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe 'vert 1resize ' . ((&columns * 76 + 67) / 135)
+exe 'vert 1resize ' . ((&columns * 83 + 67) / 135)
 exe '2resize ' . ((&lines * 13 + 14) / 28)
-exe 'vert 2resize ' . ((&columns * 58 + 67) / 135)
+exe 'vert 2resize ' . ((&columns * 51 + 67) / 135)
 exe '3resize ' . ((&lines * 12 + 14) / 28)
-exe 'vert 3resize ' . ((&columns * 58 + 67) / 135)
+exe 'vert 3resize ' . ((&columns * 51 + 67) / 135)
 argglobal
 balt templates/init.cpp
 setlocal fdm=manual
@@ -58,11 +59,11 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 41 - ((17 * winheight(0) + 13) / 26)
+let s:l = 43 - ((15 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 41
+keepjumps 43
 normal! 04|
 lcd ~/programming/cp
 wincmd w
@@ -114,11 +115,11 @@ keepjumps 1
 normal! 0
 lcd ~/programming/cp
 wincmd w
-exe 'vert 1resize ' . ((&columns * 76 + 67) / 135)
+exe 'vert 1resize ' . ((&columns * 83 + 67) / 135)
 exe '2resize ' . ((&lines * 13 + 14) / 28)
-exe 'vert 2resize ' . ((&columns * 58 + 67) / 135)
+exe 'vert 2resize ' . ((&columns * 51 + 67) / 135)
 exe '3resize ' . ((&lines * 12 + 14) / 28)
-exe 'vert 3resize ' . ((&columns * 58 + 67) / 135)
+exe 'vert 3resize ' . ((&columns * 51 + 67) / 135)
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf

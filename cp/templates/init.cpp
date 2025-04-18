@@ -18,7 +18,7 @@ tree_order_statistics_node_update>;
 #define each(a, x) for(auto& a:x)
 #define all(x) begin(x),end(x)
 #define sz(x) (int)(x).size()
-#define over(x) {cout<<x<<'\n';return;}
+#define over(x) {cout<<(x)<<'\n';return;}
 #define chmin(a,b) a=min(a,b)
 #define chmax(a,b) a=max(a,b)
 #define pb push_back
@@ -35,8 +35,8 @@ typedef vector<pi> vpi;
 typedef vector<pl> vpl;
 mt19937 gen(chrono::steady_clock::now().time_since_epoch().count());
 ll rng() { return uniform_int_distribution<ll>(0, INT64_MAX)(gen); }
-/*const db PI = atan(1)*4;*/
-/*const ll mod = 1e9+7;*/
+// const db PI = atan(1)*4;
+// const ll mod = 1e9+7;
 const ll mod = 998244353;
 
 void solve(int){
@@ -47,7 +47,7 @@ int main(){
     cin.tie(0)->sync_with_stdio(0);
     cin.exceptions(cin.failbit);
     int tc=1;
-    /*cin>>tc;*/
+    // cin>>tc;
     rep(tc) solve(i);
     return 0;
 }

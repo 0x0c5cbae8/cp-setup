@@ -1,6 +1,8 @@
-Weaknesses:
+- precompile headers
 
-- Digit DP
-- Network Flow
-- Inclusion-Exclusion Principle
-- binary operations
+:wqa
+
+sudo g++ -std=c++17 -O2 /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/extc++.h 
+sudo g++ -std=c++17 -O2 /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/stdc++.h 
+
+nvim -S
