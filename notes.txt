@@ -1,0 +1,10 @@
+- precompile headers (replace version with latest)
+
+:wqa
+
+g++ --version
+
+sudo g++ -std=c++17 -O2 /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/extc++.h 
+sudo g++ -std=c++17 -O2 /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/stdc++.h 
+
+nvim -S
