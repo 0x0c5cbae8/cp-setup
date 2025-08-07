@@ -45,9 +45,7 @@ typedef vector<qi> vqi;
 typedef vector<ql> vql;
 
 void solve(int){
-    int n;
-    cin>>n;
-    cout<<n;
+    
 }
 
 int main(){
